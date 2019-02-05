@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Estech_Revista</string>
     <string name="hint_email">Email</string>
+    <string name="hint_pass">Contraseña</string>
+    <string name="button_login">Acceder</string>
+    <string name="google_login">Acceder con Google</string>
 </resources>
