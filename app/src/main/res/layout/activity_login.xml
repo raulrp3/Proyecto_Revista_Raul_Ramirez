@@ -65,26 +65,17 @@
             android:textSize="15dp"
             android:background="@color/color_accent"
             android:layout_marginTop="20dp"/>
-        <RelativeLayout
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
-            android:background="@drawable/google_background"
-            android:padding="10dp">
-            <ImageView
-                android:id="@+id/img_google"
-                android:layout_width="25dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/google"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/google_login"
-                android:layout_toRightOf="@id/img_google"
-                android:layout_marginStart="10dp"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
-        </RelativeLayout>
+            android:background="@color/white"
+            android:drawableStart="@drawable/google"
+            android:text="@string/google_login"
+            android:drawablePadding="10dp"
+            android:textColor="@color/color_hint"
+            android:elevation="10dp"
+            android:padding="10dp"/>
     </LinearLayout>
 </FrameLayout>

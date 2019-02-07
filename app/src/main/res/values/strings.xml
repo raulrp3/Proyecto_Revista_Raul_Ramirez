@@ -4,4 +4,7 @@
     <string name="hint_pass">Contraseña</string>
     <string name="button_login">Acceder</string>
     <string name="google_login">Acceder con Google</string>
+    <string name="estech_1">Centro especializado en Innovación Digital y Nuevas Tecnologías</string>
+    <string name="estech_2">es[tech] es un centro de formación profesional especializado en Innovación Digital y Nuevas Tecnologías. Con la ambición de contribuir a la dinamización de la zona, es[tech] nace impulsado por el objetivo de formar a los nuevos profesionales de la Tecnología y la Industria 4.0. avalada por una trayectoria de más de 40 años impartiendo formación y que cuenta con el apoyo de empresas e instituciones a nivel nacional.</string>
+    <string name="estech_3">Situada en la provincia de Jaén, es[tech] ocupa un edificio singular en la zona céntrica, con un total de 600m2 de instalaciones equipados con la mejor tecnología. La actualizada oferta académica de es[tech], tanto de enseñanza reglada, como de titulaciones propias, tiene como objetivo que los alumnos puedan integrarse con éxito en el mercado laboral.</string>
 </resources>
