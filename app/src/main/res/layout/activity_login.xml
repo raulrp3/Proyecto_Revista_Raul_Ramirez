@@ -33,6 +33,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/user"/>
             <EditText
+                android:id="@+id/edit_text_email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@+id/img_user"
@@ -51,13 +52,16 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/pass"/>
             <EditText
+                android:id="@+id/edit_text_pass"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@+id/img_pass"
                 android:hint="@string/hint_pass"
-                android:layout_marginStart="20dp"/>
+                android:layout_marginStart="20dp"
+                android:inputType="textPassword"/>
         </RelativeLayout>
         <Button
+            android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_login"
