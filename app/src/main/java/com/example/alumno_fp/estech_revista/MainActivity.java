@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submitForm();
+                String email = etEmail.getText().toString().trim();
+                String pass = etPass.getText().toString().trim();
+                submitForm(email,pass);
             }
         });
     }
@@ -30,41 +32,38 @@ public class MainActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.edit_text_email);
         etPass = findViewById(R.id.edit_text_pass);
     }
-    private void submitForm(){
-        if (!validate()){
+    private void submitForm(String email,String pass){
+        if (!validate(email,pass)){
             Toast.makeText(getApplicationContext(),"¡No puedes dejar campos sin rellenar!", Toast.LENGTH_SHORT).show();
         }else{
-            if (!validateEmail()){
+            if (!validateEmail(email)){
                 Toast.makeText(getApplicationContext(),"¡Email no válido!", Toast.LENGTH_SHORT).show();
             }else{
-                if (!validatePass()){
+                if (!validatePass(pass)){
                     Toast.makeText(getApplicationContext(),"¡Contraseña incorrecta!", Toast.LENGTH_SHORT).show();
                 }else{
                     Intent intent = new Intent(MainActivity.this,NavigationActivity.class);
+                    intent.putExtra("user",email);
                     startActivity(intent);
                 }
             }
         }
     }
-    private boolean validate(){
-        String email = etEmail.getText().toString().trim();
-        String pass = etPass.getText().toString().trim();
+    private boolean validate(String email,String pass){
         boolean isValid = true;
         if (email.isEmpty() || pass.isEmpty()){
             isValid = false;
         }
         return isValid;
     }
-    private boolean validateEmail(){
-        String email = etEmail.getText().toString().trim();
+    private boolean validateEmail(String email){
         boolean isValid = true;
         if (!isValidEmail(email)){
             isValid = false;
         }
         return  isValid;
     }
-    private boolean validatePass(){
-        String pass = etPass.getText().toString().trim();
+    private boolean validatePass(String pass){
         boolean isValid = true;
         if (!pass.equals(PASS)){
             isValid = false;
