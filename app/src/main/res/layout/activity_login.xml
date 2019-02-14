@@ -74,12 +74,11 @@
             android:layout_height="45dp"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
-            android:background="@color/white"
+            android:background="@drawable/google_background"
             android:drawableStart="@drawable/google"
             android:text="@string/google_login"
             android:drawablePadding="10dp"
             android:textColor="@color/color_hint"
-            android:elevation="10dp"
             android:padding="10dp"/>
     </LinearLayout>
 </FrameLayout>
